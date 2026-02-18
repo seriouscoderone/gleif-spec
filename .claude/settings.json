@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "skos-distillation-skill@skos-skill": true
+  }
+}
