@@ -1,4 +1,12 @@
 {
+  "extraKnownMarketplaces": {
+    "skos-skill": {
+      "source": {
+        "source": "github",
+        "repo": "seriouscoderone/skos-skill"
+      }
+    }
+  },
   "enabledPlugins": {
     "skos-distillation-skill@skos-skill": true
   }
