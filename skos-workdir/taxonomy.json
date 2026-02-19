@@ -1,0 +1,1218 @@
+{
+  "conceptScheme": {
+    "id": "vlei-egf",
+    "title": "vLEI Ecosystem Governance Framework",
+    "description": "Comprehensive governance framework for verifiable Legal Entity Identifiers covering KERI infrastructure, ACDC credentials, organizational roles, and trust assurance.",
+    "created": "2026-02-18",
+    "sourceDocCount": 24,
+    "conceptCount": 42
+  },
+  "concepts": {
+    "vlei-ecosystem-governance": {
+      "prefLabel": "vLEI Ecosystem Governance",
+      "altLabels": [
+        "Agreement Change Process",
+        "Controlled Document",
+        "Credential Framework",
+        "EGF",
+        "Primary Document",
+        "vLEI Credential Framework",
+        "vLEI EGF",
+        "vLEI Ecosystem Governance Framework"
+      ],
+      "definition": "A Layer Four Ecosystem Governance Framework of the Trust over IP Foundation that establishes GLEIF's role in digital identity and ACDC Credentials, governing the issuance, holding, and verification of vLEI Credentials through a set of controlled documents covering governance requirements, technical specifications, credential frameworks, and information trust policies.",
+      "scopeNote": "Covers the overall framework structure, controlled documents, and change management policies. Does not cover LEI governance processes managed separately by GLEIF.",
+      "depth": 0,
+      "broader": [],
+      "narrower": [
+        "gleif",
+        "global-lei-system",
+        "legal-entity",
+        "vlei-ecosystem-information-trust-policies",
+        "vlei-issuer-qualification-agreement"
+      ],
+      "related": [],
+      "sourceRefs": [
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-vlei-ecosystem-information-trust-policies-2024_v1.2_final.md"
+      ]
+    },
+    "keri-infrastructure": {
+      "prefLabel": "KERI Infrastructure",
+      "altLabels": [
+        "KERI",
+        "Key Event Receipt Infrastructure"
+      ],
+      "definition": "The decentralized key management and event receipt infrastructure used as the technical foundation for the vLEI Ecosystem, supporting autonomous identifiers, key rotation, witness networks, and cryptographic verification of credential events.",
+      "scopeNote": "Does not cover credential issuance or schema definitions; those are handled by ACDC and related specifications.",
+      "depth": 0,
+      "broader": [],
+      "narrower": [
+        "autonomic-identifier",
+        "cryptographic-primitives",
+        "delegation-hierarchy",
+        "key-management",
+        "security-infrastructure",
+        "witness-and-watcher-network"
+      ],
+      "related": [
+        "vlei-software"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-3-vlei-issuer-qualification-program-checklist_v1.5-final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "vlei-credentials": {
+      "prefLabel": "vLEI Credentials",
+      "altLabels": [
+        "Verifiable LEI",
+        "Verifiable LEI Credential",
+        "vLEI",
+        "vLEI Credential"
+      ],
+      "definition": "A verifiable credential in the vLEI ecosystem implemented as an Authentic Chained Data Container (ACDC) that must support JSON serialization, include SAIDs for immutability, and comply with its specific vLEI Credential Governance Framework.",
+      "scopeNote": "Does not refer to traditional LEI assignments; refers specifically to cryptographically verifiable ACDC-based credentials.",
+      "depth": 0,
+      "broader": [],
+      "narrower": [
+        "acdc",
+        "credential-chain",
+        "credential-exchange",
+        "credential-lifecycle",
+        "vlei-credential-schema",
+        "vlei-credential-types"
+      ],
+      "related": [],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md"
+      ]
+    },
+    "roles-and-representatives": {
+      "prefLabel": "Roles and Representatives",
+      "altLabels": [
+        "vLEI Ecosystem Stakeholder",
+        "vLEI User"
+      ],
+      "definition": "The set of organizational and individual roles within the vLEI Ecosystem, including GLEIF as governing authority, Qualified vLEI Issuers, Legal Entities, their authorized representatives (GARs, QARs, LARs, DARs), and persons holding role credentials (OOR Persons, ECR Persons).",
+      "scopeNote": "Covers all stakeholder roles and representative functions. Individual credential types are covered under vLEI Credentials.",
+      "depth": 0,
+      "broader": [],
+      "narrower": [
+        "ecr-person",
+        "gleif-authorized-representative",
+        "legal-entity-representatives",
+        "oor-person",
+        "qualified-vlei-issuer",
+        "qvi-authorized-representative"
+      ],
+      "related": [],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md"
+      ]
+    },
+    "trust-and-qualification": {
+      "prefLabel": "Trust and Qualification",
+      "altLabels": [
+        "TAF",
+        "ToIP",
+        "ToIP Foundation",
+        "ToIP Governance Stack",
+        "Trust Assurance Framework",
+        "Trust over IP",
+        "Trust over IP Foundation",
+        "Trust over IP Governance Stack"
+      ],
+      "definition": "The trust assurance and qualification domain of the vLEI Ecosystem, encompassing the Trust over IP governance architecture, the Trust Assurance Framework mapping requirements to specification, conformance, and performance assurance, the vLEI Issuer Qualification Program, identity verification processes, risk assessment, and service level management.",
+      "scopeNote": "Covers trust establishment, qualification of vLEI Issuers, identity verification, and operational assurance. Does not define credential-specific technical requirements.",
+      "depth": 0,
+      "broader": [],
+      "narrower": [
+        "annual-qualification",
+        "identity-verification",
+        "oobi-protocol",
+        "qualification-program",
+        "risk-assessment",
+        "service-level-management",
+        "trustmark"
+      ],
+      "related": [],
+      "sourceRefs": [
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-risk-assessment_v1.2-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "gleif": {
+      "prefLabel": "GLEIF",
+      "altLabels": [
+        "Global Legal Entity Identifier Foundation"
+      ],
+      "definition": "A not-for-profit foundation incorporated under Swiss law that operates the Global LEI System and serves as both the Governing Authority and Administering Authority of the vLEI Ecosystem Governance Framework, managing the GLEIF Root AID and overseeing Qualified vLEI Issuers.",
+      "scopeNote": "",
+      "depth": 1,
+      "broader": [
+        "vlei-ecosystem-governance"
+      ],
+      "narrower": [
+        "vlei-reporting-api",
+        "vlei-software"
+      ],
+      "related": [
+        "delegation-hierarchy"
+      ],
+      "sourceRefs": [
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md"
+      ]
+    },
+    "global-lei-system": {
+      "prefLabel": "Global LEI System",
+      "altLabels": [
+        "GLEIS",
+        "Global LEI Repository",
+        "Global Legal Entity Identifier System",
+        "ISO 17442",
+        "LEI Issuer",
+        "ROC",
+        "Regulatory Oversight Committee"
+      ],
+      "definition": "The global system established under the oversight of the Regulatory Oversight Committee for the unique identification of legal entities participating in financial transactions through Legal Entity Identifiers.",
+      "scopeNote": "Does not cover the vLEI credential infrastructure; it is the underlying LEI registration and data system.",
+      "depth": 1,
+      "broader": [
+        "vlei-ecosystem-governance"
+      ],
+      "narrower": [],
+      "related": [
+        "legal-entity"
+      ],
+      "sourceRefs": [
+        "2022-12-16_vlei-egf-v3.0-governance-requirements_v1.0-final.md",
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md"
+      ]
+    },
+    "legal-entity": {
+      "prefLabel": "Legal Entity",
+      "altLabels": [
+        "LE",
+        "LEI",
+        "Legal Entity Identifier"
+      ],
+      "definition": "A legal person or structure organized under the laws of any jurisdiction that is uniquely identified by a Legal Entity Identifier (LEI) as defined in ISO 17442, eligible to receive vLEI Credentials within the vLEI Ecosystem. Includes governmental and supranational organizations but excludes natural persons not acting in a business capacity.",
+      "scopeNote": "Does not include natural persons acting in their personal capacity; it does include individuals acting in a business capacity.",
+      "depth": 1,
+      "broader": [
+        "vlei-ecosystem-governance"
+      ],
+      "narrower": [],
+      "related": [
+        "global-lei-system",
+        "legal-entity-representatives"
+      ],
+      "sourceRefs": [
+        "2022-12-16_vlei-egf-v3.0-governance-requirements_v1.0-final.md",
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md"
+      ]
+    },
+    "vlei-ecosystem-information-trust-policies": {
+      "prefLabel": "Information Trust Policies",
+      "altLabels": [
+        "Appendix 1",
+        "Confidential Information",
+        "Developer Security Policy",
+        "Disclosing Party",
+        "FADP",
+        "NDA",
+        "Non-Disclosure Agreement",
+        "Privacy Breach",
+        "Privacy Incident",
+        "Receiving Party",
+        "Security Incidents Policy",
+        "Swiss Federal Data Protection Act",
+        "vLEI Data Protection Policy",
+        "vLEI Ecosystem Information Trust Policies",
+        "vLEI Ecosystem Stakeholder Privacy Policy",
+        "vLEI Ecosystem Stakeholder Security Policy"
+      ],
+      "definition": "The suite of information trust policies within the vLEI Ecosystem Governance Framework covering data protection, privacy, security, developer security, incident response, and confidentiality obligations including the Non-Disclosure Agreement between GLEIF and Qualified vLEI Issuers.",
+      "scopeNote": "Does not include information that is already publicly known, was disclosed without confidentiality reservation, or is required to be disclosed by law.",
+      "depth": 1,
+      "broader": [
+        "vlei-ecosystem-governance"
+      ],
+      "narrower": [],
+      "related": [
+        "risk-assessment"
+      ],
+      "sourceRefs": [
+        "2024-06-26_appendix-1-non-disclosure-agreement_v1.2.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-vlei-ecosystem-information-trust-policies-2024_v1.2_final.md"
+      ]
+    },
+    "vlei-issuer-qualification-agreement": {
+      "prefLabel": "vLEI Issuer Qualification Agreement",
+      "altLabels": [
+        "Ancillary Duties",
+        "Appendix 7",
+        "Core Duties",
+        "Force Majeure",
+        "Intellectual Property Rights in vLEIs",
+        "Liquidated Damages",
+        "Mediation and Arbitration",
+        "No Sublicensing of Qualification",
+        "QVI Records",
+        "QVI-LE Contract Terms",
+        "Qualification Agreement",
+        "Qualified vLEI Issuer Records",
+        "Qualified vLEI Issuer-Legal Entity Required Contract Terms",
+        "Third Party Services",
+        "Third-Party Service Provider",
+        "Third-Party Services"
+      ],
+      "definition": "The binding legal agreement between GLEIF and a Qualified vLEI Issuer establishing rights and obligations for participation in the vLEI Ecosystem, including core duties, ancillary duties, records management, intellectual property provisions, liability, dispute resolution, third-party services constraints, and Legal Entity contract terms.",
+      "scopeNote": "Does not replace the QAR's or LAR's responsibility to verify identity assurance results; the authorized representative must be able to view and confirm the third party's results.",
+      "depth": 1,
+      "broader": [
+        "vlei-ecosystem-governance"
+      ],
+      "narrower": [],
+      "related": [
+        "qualified-vlei-issuer"
+      ],
+      "sourceRefs": [
+        "2023-08-30_appendix-7-qualified-vlei-issuer-legal-entity-contract-terms_v1.1_final.md",
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "autonomic-identifier": {
+      "prefLabel": "Autonomic Identifier",
+      "altLabels": [
+        "AID",
+        "DID Method",
+        "Delegated AID",
+        "Ephemeral AID",
+        "Non-Transferable AID",
+        "Transferable AID",
+        "did:keri"
+      ],
+      "definition": "A self-certifying identifier managed via the KERI protocol, existing in two main classes: transferable AIDs supporting key rotation for long-term use, and non-transferable (ephemeral) AIDs that are abandoned upon compromise. Includes delegated AIDs authorized through cooperative cryptographic commitment, and supports DID method resolution via did:keri.",
+      "scopeNote": "Does not include traditional identifiers such as domain names or URIs that lack self-certifying properties.",
+      "depth": 1,
+      "broader": [
+        "keri-infrastructure"
+      ],
+      "narrower": [],
+      "related": [
+        "credential-chain"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-3-vlei-issuer-qualification-program-checklist_v1.5-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "key-management": {
+      "prefLabel": "Key Management",
+      "altLabels": [
+        "Controller",
+        "Ed25519",
+        "Ed25519 Signature",
+        "Inception Event",
+        "Interaction Event",
+        "KEL",
+        "Key Event Log",
+        "Key Pre-Rotation",
+        "Key Rotation",
+        "Key Rotation Event",
+        "Key-Pair Creation and Storage Infrastructure",
+        "Pre-Rotation",
+        "Rotation Event",
+        "Signature Creation Infrastructure"
+      ],
+      "definition": "The policies and infrastructure for managing asymmetric key pairs in the vLEI Ecosystem, covering key-pair creation and storage, signature creation using Ed25519, key pre-rotation mechanisms, rotation events, inception events, interaction events, key event logs, and the controller role responsible for authorizing key events.",
+      "scopeNote": "Does not involve key rotation; it records non-establishment events such as delegation approvals and credential signings.",
+      "depth": 1,
+      "broader": [
+        "keri-infrastructure"
+      ],
+      "narrower": [],
+      "related": [
+        "security-infrastructure"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-3-vlei-issuer-qualification-program-checklist_v1.5-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "witness-and-watcher-network": {
+      "prefLabel": "Witness and Watcher Networks",
+      "altLabels": [
+        "Backer",
+        "Endorser",
+        "GLEIF Watcher Network",
+        "GLEIF Witness Network",
+        "KAWA",
+        "KERI Algorithm for Witness Agreement",
+        "KERI Watcher",
+        "KERI Witness",
+        "Ledger Registrar",
+        "Registrar",
+        "Watcher",
+        "Witness",
+        "Witness Pool"
+      ],
+      "definition": "The decentralized verification infrastructure in KERI consisting of Witness pools that endorse key events using the KERI Algorithm for Witness Agreement (KAWA), Watcher networks that independently verify signature status, and Registrar backers that provide ledger-based secondary roots of trust. Includes GLEIF's own Witness and Watcher networks.",
+      "scopeNote": "Does not have signing authority over credentials; witnesses attest to the receipt of key events but do not authorize credential operations.",
+      "depth": 1,
+      "broader": [
+        "keri-infrastructure"
+      ],
+      "narrower": [],
+      "related": [],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-3-vlei-issuer-qualification-program-checklist_v1.5-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "delegation-hierarchy": {
+      "prefLabel": "Delegation Hierarchy",
+      "altLabels": [
+        "Delegation",
+        "GEDA",
+        "GIDA",
+        "GLEIF External Delegated AID",
+        "GLEIF Identifier Governance Framework",
+        "GLEIF Internal Delegated AID",
+        "GLEIF Root AID",
+        "GLEIF Root Autonomic Identifier",
+        "KERI Delegation",
+        "QVI Delegated AID",
+        "Root AID"
+      ],
+      "definition": "The hierarchical AID structure in the vLEI Ecosystem where the GLEIF Root AID delegates authority to the GLEIF Internal Delegated AID (GIDA) for internal operations and the GLEIF External Delegated AID (GEDA) for issuing QVI credentials, with each delegation requiring cooperative verified signatures from both delegator and delegatee.",
+      "scopeNote": "Does not exist independently; it requires cooperative delegation with a cryptographic commitment from both the GLEIF delegator and the QVI delegate.",
+      "depth": 1,
+      "broader": [
+        "keri-infrastructure"
+      ],
+      "narrower": [],
+      "related": [
+        "credential-chain",
+        "gleif",
+        "gleif-authorized-representative"
+      ],
+      "sourceRefs": [
+        "2022-12-16_vlei-egf-v3.0-gleif-identifier-governance-framework_v1.0-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "cryptographic-primitives": {
+      "prefLabel": "Cryptographic Primitives",
+      "altLabels": [
+        "CESR",
+        "Composable Event Streaming Representation",
+        "DHT",
+        "Distributed Hash Table",
+        "SAID",
+        "Seal",
+        "Self-Addressing Identifier"
+      ],
+      "definition": "The foundational cryptographic data structures and encoding formats used in the vLEI Ecosystem, including Composable Event Streaming Representation (CESR) for text-binary encoding, Self-Addressing Identifiers (SAIDs) for content-based tamper-evident identifiers, cryptographic seals for anchoring data to key events, and distributed hash tables for AID discovery.",
+      "scopeNote": "Does not function as a network address or locator; it is a content-based identifier for verification purposes.",
+      "depth": 1,
+      "broader": [
+        "keri-infrastructure"
+      ],
+      "narrower": [],
+      "related": [
+        "acdc"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-3-vlei-credential-schema-registry_v1.1-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-authorization-vlei-credential-framework_v1.3_final.md"
+      ]
+    },
+    "security-infrastructure": {
+      "prefLabel": "Security Infrastructure",
+      "altLabels": [
+        "Continuity Policy",
+        "Cryptographic Root of Trust",
+        "Escrow Agent",
+        "HSM",
+        "Hardware Security Module",
+        "Key Compromise Recovery",
+        "MFA",
+        "Multi-Sig Group",
+        "Multi-Signature Group",
+        "Multi-Signature Scheme",
+        "Multi-factor Authentication",
+        "Multi-sig",
+        "Multi-sig Group",
+        "Multi-signature Group",
+        "Multisig",
+        "Private Key Compromise",
+        "Private Key Store",
+        "Signature Verification Infrastructure",
+        "Signing Threshold",
+        "TEE",
+        "Threshold Multisig",
+        "Thresholded Multi-Signature",
+        "Trusted Execution Environment",
+        "Weighted Multi-Sig"
+      ],
+      "definition": "The security components of the KERI infrastructure including multi-signature schemes with weighted thresholds, trusted execution environments, hardware security modules, private key stores, escrow agents for key recovery, continuity policies, and mechanisms for detecting and recovering from private key compromise.",
+      "scopeNote": "Does not define the total number of authorized representatives; a single-signer threshold applies only to sole-employee entities.",
+      "depth": 1,
+      "broader": [
+        "keri-infrastructure"
+      ],
+      "narrower": [],
+      "related": [
+        "key-management",
+        "oobi-protocol",
+        "risk-assessment"
+      ],
+      "sourceRefs": [
+        "2022-12-16_vlei-egf-v3.0-gleif-identifier-governance-framework_v1.0-final.md",
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-risk-assessment_v1.2-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-3-vlei-issuer-qualification-program-checklist_v1.5-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "acdc": {
+      "prefLabel": "Authentic Chained Data Container",
+      "altLabels": [
+        "ACDC",
+        "ACDC Fully-Compressed Form",
+        "ACDC Fully-Expanded Form",
+        "ACDC Schema-Compressed Form",
+        "ACDC Source",
+        "Form 1",
+        "Form 2",
+        "Form 3",
+        "Rules Section",
+        "Source Link",
+        "Sources Section"
+      ],
+      "definition": "A specification and data container format for verifiable credentials that supports cryptographic chaining through source links, composable JSON Schema, multiple serialization formats, Ricardian contracts, and chain-link confidentiality. Credentials exist in three forms: fully-expanded, fully-compressed, and schema-compressed, with rules sections for usage restrictions.",
+      "scopeNote": "Does not refer to W3C Verifiable Credentials in general; ACDCs are a specific format with distinctive features including normative chaining support.",
+      "depth": 1,
+      "broader": [
+        "vlei-credentials"
+      ],
+      "narrower": [],
+      "related": [
+        "cryptographic-primitives",
+        "vlei-credential-schema"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "vlei-credential-types": {
+      "prefLabel": "vLEI Credential Types",
+      "altLabels": [
+        "LE vLEI Credential",
+        "Legal Entity vLEI Credential",
+        "QVI Credential",
+        "QVI vLEI Credential",
+        "Qualified vLEI Issuer vLEI Credential",
+        "vLEI Role Credential"
+      ],
+      "definition": "The hierarchy of vLEI Credential types in the ecosystem: the QVI vLEI Credential issued by GLEIF to authorize issuers, the Legal Entity vLEI Credential binding an entity's LEI to a KERI AID, and role credentials (OOR and ECR) binding persons to organizational or engagement roles.",
+      "scopeNote": "Does not grant authority to issue credentials outside the vLEI Ecosystem; revocation of this credential triggers a grace period and terminates the QVI's issuing capability.",
+      "depth": 1,
+      "broader": [
+        "vlei-credentials"
+      ],
+      "narrower": [
+        "ecr-vlei-credential",
+        "oor-vlei-credential",
+        "qvi-auth-vlei-credential"
+      ],
+      "related": [],
+      "sourceRefs": [
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-3-vlei-credential-schema-registry_v1.1-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-authorization-vlei-credential-framework_v1.3_final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "credential-chain": {
+      "prefLabel": "Credential Chain",
+      "altLabels": [
+        "Chain of Trust",
+        "Credential Chaining",
+        "Provenance Chain",
+        "Root of Trust",
+        "vLEI Chain of Trust"
+      ],
+      "definition": "The cryptographic chain of trust for organizational identity in the vLEI ecosystem, implemented through ACDC source references and SAIDs, connecting GLEIF as the root of trust through Qualified vLEI Issuers to Legal Entities and their representatives, where revocation of any credential in the chain invalidates all downstream credentials.",
+      "scopeNote": "Does not describe a trust hierarchy in the abstract; it is the concrete cryptographic linkage implemented through ACDC source references and SAIDs.",
+      "depth": 1,
+      "broader": [
+        "vlei-credentials"
+      ],
+      "narrower": [],
+      "related": [
+        "autonomic-identifier",
+        "delegation-hierarchy"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-authorization-vlei-credential-framework_v1.3_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "credential-lifecycle": {
+      "prefLabel": "Credential Lifecycle",
+      "altLabels": [
+        "Active Status",
+        "Grace Period",
+        "Involuntary Revocation",
+        "Issuance Compliance",
+        "LEI Entity Status",
+        "LEI Registration Status",
+        "Voluntary Revocation",
+        "vLEI Issuance",
+        "vLEI Maintenance",
+        "vLEI Revocation"
+      ],
+      "definition": "The full lifecycle of vLEI Credentials covering issuance, maintenance, and revocation processes. Issuance requires identity verification and LEI status checks. Maintenance ensures ongoing Active entity status and valid registration status. Revocation may be voluntary (holder-initiated) or involuntary (issuer or GLEIF-initiated due to non-compliance).",
+      "scopeNote": "Does not apply to Legal Entity or role-based vLEI Credentials directly; it is specific to the QVI vLEI Credential lifecycle.",
+      "depth": 1,
+      "broader": [
+        "vlei-credentials"
+      ],
+      "narrower": [],
+      "related": [
+        "identity-verification",
+        "vlei-reporting-api"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-5-qualified-vlei-issuer-service-level-agreement_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "vlei-credential-schema": {
+      "prefLabel": "vLEI Credential Schema",
+      "altLabels": [
+        "SemVer",
+        "Semantic Versioning",
+        "vLEI Credential Schema Registry"
+      ],
+      "definition": "The JSON Schema 2020-12 compliant schema definitions for vLEI Credentials, each including a Self-Addressing Identifier (SAID) for immutability verification. Managed through the vLEI Credential Schema Registry maintained by GLEIF as the authoritative source, with schema versions following semantic versioning conventions.",
+      "scopeNote": "Does not cover versioning of the KERI protocol or the EGF itself; applies specifically to credential schema versions.",
+      "depth": 1,
+      "broader": [
+        "vlei-credentials"
+      ],
+      "narrower": [],
+      "related": [
+        "acdc"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-3-vlei-credential-schema-registry_v1.1-final.md"
+      ]
+    },
+    "credential-exchange": {
+      "prefLabel": "Credential Exchange",
+      "altLabels": [
+        "Admit Message",
+        "Contractually Protected Disclosure",
+        "Credential Issuance and Revocation Registry",
+        "Credential Wallet",
+        "Graduated Disclosure",
+        "IPEX",
+        "IPEX Protocol",
+        "Issuance and Presentation Exchange",
+        "Issuance and Presentation Exchange Protocol",
+        "PTEL",
+        "Proof Request",
+        "Public Transaction Event Log",
+        "Revocation Log",
+        "TEL",
+        "Transaction Event Log",
+        "Validator",
+        "Verifier",
+        "vLEI Credentials Wallet"
+      ],
+      "definition": "The protocols and infrastructure for exchanging and verifying vLEI Credentials, including the Issuance and Presentation Exchange Protocol (IPEX) for credential presentation, proof requests from verifiers, graduated and contractually protected disclosure mechanisms, credential registries, transaction event logs, and credential wallets.",
+      "scopeNote": "Does not address credential issuance lifecycle management (creation, revocation); it specifically handles the presentation exchange mechanics.",
+      "depth": 1,
+      "broader": [
+        "vlei-credentials"
+      ],
+      "narrower": [],
+      "related": [
+        "oobi-protocol"
+      ],
+      "sourceRefs": [
+        "2023-08-30_appendix-7-qualified-vlei-issuer-legal-entity-contract-terms_v1.1_final.md",
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-2-vlei-credentials_v1.1-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-engagement-context-role-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-official-organizational-role-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "gleif-authorized-representative": {
+      "prefLabel": "GLEIF Authorized Representative",
+      "altLabels": [
+        "External GAR",
+        "External GLEIF Authorized Representative",
+        "GAR"
+      ],
+      "definition": "Representatives of GLEIF authorized to perform identity verification, hold cryptographic keys, and approve key management operations. Includes Internal GARs managing the GLEIF Internal Delegated AID, and External GARs managing the GLEIF External Delegated AID, responsible for QVI credential issuance and QVI AID delegation.",
+      "scopeNote": "Does not interact directly with Legal Entities or their representatives; operates at the GLEIF-to-QVI level of the trust hierarchy.",
+      "depth": 1,
+      "broader": [
+        "roles-and-representatives"
+      ],
+      "narrower": [],
+      "related": [
+        "delegation-hierarchy"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "qualified-vlei-issuer": {
+      "prefLabel": "Qualified vLEI Issuer",
+      "altLabels": [
+        "Candidate vLEI Issuer",
+        "QVI"
+      ],
+      "definition": "An organization that has been formally qualified by GLEIF through the vLEI Issuer Qualification Program and holds a valid QVI vLEI Credential, authorizing it to issue, maintain, and revoke Legal Entity, OOR, and ECR vLEI Credentials. Includes Candidate vLEI Issuers undergoing the qualification evaluation process.",
+      "scopeNote": "Does not refer to any entity that issues verifiable credentials in general; it is specific to the GLEIF vLEI Ecosystem qualification.",
+      "depth": 1,
+      "broader": [
+        "roles-and-representatives"
+      ],
+      "narrower": [
+        "qvi-self-issuance"
+      ],
+      "related": [
+        "qualification-program",
+        "service-level-management",
+        "vlei-issuer-qualification-agreement"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "qvi-authorized-representative": {
+      "prefLabel": "QVI Authorized Representative",
+      "altLabels": [
+        "Delegated AID QVI Authorized Representative Lead",
+        "Dual QAR Issuance Workflow",
+        "QAR",
+        "QAR Lead",
+        "Qualified vLEI Issuer Authorized Representative",
+        "Two-QAR Workflow"
+      ],
+      "definition": "Representatives of a Qualified vLEI Issuer authorized to perform identity verification, credential issuance, and revocation operations. Requires at least two QARs operating in a multi-sig group, with a QAR Lead coordinating delegated AID creation and a mandatory dual-QAR workflow where separate QARs verify identity and co-sign credential issuance.",
+      "scopeNote": "Does not include Legal Entity Authorized Representatives (LARs) or Designated Authorized Representatives (DARs), which represent the Legal Entity.",
+      "depth": 1,
+      "broader": [
+        "roles-and-representatives"
+      ],
+      "narrower": [],
+      "related": [
+        "identity-verification"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-official-organizational-role-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "legal-entity-representatives": {
+      "prefLabel": "Legal Entity Representatives",
+      "altLabels": [
+        "DAR",
+        "Designated Authorized Representative",
+        "LAR",
+        "LAR Lead",
+        "Legal Entity Authorized Representative"
+      ],
+      "definition": "The authorized representatives acting on behalf of a Legal Entity in the vLEI Ecosystem. Designated Authorized Representatives (DARs) have signing authority to execute agreements and designate LARs. Legal Entity Authorized Representatives (LARs) manage day-to-day credential operations including issuance and revocation requests, with a LAR Lead initiating multi-sig group creation.",
+      "scopeNote": "Does not include the authority to execute the vLEI Issuer Qualification Agreement, which is reserved for DARs.",
+      "depth": 1,
+      "broader": [
+        "roles-and-representatives"
+      ],
+      "narrower": [],
+      "related": [
+        "legal-entity",
+        "qvi-auth-vlei-credential"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "oor-person": {
+      "prefLabel": "OOR Person",
+      "altLabels": [
+        "ISO 5009",
+        "ISO 5009 Official Organization Role Lists",
+        "OOR",
+        "OOR Person Consent",
+        "Official Organizational Role",
+        "Official Organizational Role Person"
+      ],
+      "definition": "A natural person who holds a formally recognized Official Organizational Role at a Legal Entity, such as a position defined in ISO 5009 (e.g., Chief Executive Officer, Board Director), whose identity and role must be verified before an OOR vLEI Credential can be issued. Requires explicit consent for public disclosure on the GLEIF LEI page.",
+      "scopeNote": "Does not include informal engagement-specific roles; the role must be verifiable through official public sources, business registry documents, or certified entity documentation.",
+      "depth": 1,
+      "broader": [
+        "roles-and-representatives"
+      ],
+      "narrower": [],
+      "related": [
+        "oor-vlei-credential"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-official-organizational-role-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "ecr-person": {
+      "prefLabel": "ECR Person",
+      "altLabels": [
+        "ECR",
+        "Engagement Context Role",
+        "Engagement Context Role Person"
+      ],
+      "definition": "A natural person serving in an Engagement Context Role at a Legal Entity, representing a function within a specific engagement context such as a project-based or contractual capacity. Unlike Official Organizational Roles, engagement context roles are defined by the Legal Entity itself and do not require validation against public registries.",
+      "scopeNote": "Does not require validation against public registries or ISO 5009 role lists; it is broader and more flexible than an Official Organizational Role.",
+      "depth": 1,
+      "broader": [
+        "roles-and-representatives"
+      ],
+      "narrower": [],
+      "related": [
+        "ecr-vlei-credential"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-engagement-context-role-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "qualification-program": {
+      "prefLabel": "vLEI Issuer Qualification Program",
+      "altLabels": [
+        "Appendix 2",
+        "Appendix 3",
+        "COI",
+        "Conflict of Interest",
+        "Letters of Assurance",
+        "Qualification",
+        "Qualification Documentation",
+        "Qualification Program",
+        "Qualification Program Checklist",
+        "Qualification Program Manual",
+        "vLEI Issuer Qualification",
+        "vLEI Issuer Qualification Program Checklist",
+        "vLEI Issuer Qualification Program Manual"
+      ],
+      "definition": "The comprehensive evaluation program required for organizations seeking to become Qualified vLEI Issuers, assessing financial, operational, and information technology capabilities through a structured self-assessment checklist and qualification manual, including conflict of interest evaluation and letters of assurance.",
+      "scopeNote": "Covers initial qualification only; ongoing compliance is assessed through Annual vLEI Issuer Qualification.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [],
+      "related": [
+        "qualified-vlei-issuer"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-2-vlei-issuer-qualification-program-manual_v1.4-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-3-vlei-issuer-qualification-program-checklist_v1.5-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md"
+      ]
+    },
+    "annual-qualification": {
+      "prefLabel": "Annual vLEI Issuer Qualification",
+      "altLabels": [
+        "Audit Report",
+        "Extraordinary vLEI Issuer Qualification",
+        "Verification and Audits"
+      ],
+      "definition": "The recurring and exceptional qualification processes for Qualified vLEI Issuers, including Annual vLEI Issuer Qualification conducted on each anniversary date and Extraordinary Qualification triggered when documentation is no longer current, plus GLEIF's verification and audit rights over QVI internal controls and operations.",
+      "scopeNote": "Does not include the initial qualification process for Candidate vLEI Issuers or Extraordinary vLEI Issuer Qualification.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [
+        "assurance-dimensions"
+      ],
+      "related": [
+        "service-level-management"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md"
+      ]
+    },
+    "identity-verification": {
+      "prefLabel": "Identity Verification",
+      "altLabels": [
+        "Digital Identity Scheme",
+        "IA",
+        "IAL2",
+        "Identity Assurance",
+        "Identity Assurance Level 2",
+        "Identity Authentication",
+        "Signing Authority Verification",
+        "Spot Check"
+      ],
+      "definition": "The combined process of Identity Assurance and Identity Authentication required before vLEI Credential issuance. Identity Assurance verifies real-world identity to at least IAL2 (NIST 800-63A) or via approved digital identity schemes. Identity Authentication cryptographically verifies control of an AID through challenge-response protocols, spot checks, and signing authority verification.",
+      "scopeNote": "Only schemes at High or Substantial Level of Assurance are accepted; does not include commercial or private identity verification services.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [],
+      "related": [
+        "credential-lifecycle",
+        "qvi-authorized-representative"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "oobi-protocol": {
+      "prefLabel": "Out-of-Band Introduction",
+      "altLabels": [
+        "Challenge Message",
+        "OOBI",
+        "OOBI Session",
+        "Out-of-Band Interaction",
+        "Out-of-Band Introduction Session"
+      ],
+      "definition": "The out-of-band introduction and interaction protocol in KERI for bootstrapping trust between parties through real-time sessions with audio and video, during which participants exchange Autonomic Identifiers via OOBI discovery mechanisms and perform cryptographic authentication through unique Challenge Messages that must be signed and returned.",
+      "scopeNote": "Does not itself authenticate an identifier; it provides the initial introduction that must be followed by cryptographic verification.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [],
+      "related": [
+        "credential-exchange",
+        "security-infrastructure"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-technical-requirements-part-1-keri-infrastructure-2024_v1.3_final.md"
+      ]
+    },
+    "risk-assessment": {
+      "prefLabel": "Risk Assessment",
+      "altLabels": [
+        "Credential Registry Risk",
+        "GLEIF Credential Registry Risk",
+        "GLEIF Risk",
+        "Governing Authority Risk",
+        "QVI Risk",
+        "Qualified vLEI Issuer Risk",
+        "Risk Treatment",
+        "Trust Area",
+        "Utility Risk",
+        "Verifier Risk"
+      ],
+      "definition": "The vLEI Risk Assessment framework categorizing risks by governance layer (Ecosystem, Credential, Provider, Utility) and trust area (Governance, Availability, Security, Privacy, Confidentiality, Processing Integrity), covering Governing Authority, QVI, Verifier, Credential Registry, and Utility risk categories with treatment recommendations.",
+      "scopeNote": "Does not cover QVI-specific, Verifier, Utility, or Legal Entity risk categories.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [],
+      "related": [
+        "security-infrastructure",
+        "vlei-ecosystem-information-trust-policies"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-risk-assessment_v1.2-final.md"
+      ]
+    },
+    "service-level-management": {
+      "prefLabel": "Service Level Management",
+      "altLabels": [
+        "Appendix 4",
+        "Appendix 5",
+        "Challenge Legal Entity Data",
+        "Communications Portal",
+        "Customer Portal",
+        "Disaster",
+        "Escalation Management",
+        "Incident Management",
+        "Incident Report",
+        "Major Incident",
+        "QVI SLA",
+        "Qualified vLEI Issuer Service Level Agreement",
+        "RTO",
+        "Recovery Time Objective",
+        "SLA",
+        "SLT",
+        "Service Continuity Process",
+        "Service Level Agreement",
+        "Service Level Breach",
+        "Service Level Target",
+        "Service Target",
+        "vLEI Data Challenge",
+        "vLEI Issuer Contact Details"
+      ],
+      "definition": "The operational management framework for the vLEI Ecosystem covering service level agreements between GLEIF and Qualified vLEI Issuers, service level targets, breach handling, escalation management, incident management, disaster recovery, service continuity processes, the communications portal, and the challenge mechanism for Legal Entity data.",
+      "scopeNote": "Changes to contact details do not require prior GLEIF approval.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [],
+      "related": [
+        "annual-qualification",
+        "qualified-vlei-issuer"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-5-qualified-vlei-issuer-service-level-agreement_v1.3-final.md",
+        "2024-06-26_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-4-vlei-issuer-contact-details_v1.3-final.md"
+      ]
+    },
+    "trustmark": {
+      "prefLabel": "TrustMark",
+      "altLabels": [
+        "Appendix 6",
+        "Qualified vLEI Issuer Qualification TrustMark",
+        "Qualified vLEI Issuer TrustMark",
+        "TrustMark Terms of Use"
+      ],
+      "definition": "A mark provided by GLEIF to a Qualified vLEI Issuer upon successful qualification, subject to specific terms of use governing display on the QVI's website, prohibition against implying GLEIF association beyond qualified services, and liquidated damages for non-compliance. Must be removed upon termination or failure to complete annual qualification.",
+      "scopeNote": "Does not convey any intellectual property rights in vLEIs and must not be provided to third parties.",
+      "depth": 1,
+      "broader": [
+        "trust-and-qualification"
+      ],
+      "narrower": [],
+      "related": [],
+      "sourceRefs": [
+        "2023-08-30_appendix-6-terms-of-use-qualified-vlei-issuer-trustmark_v1.1_final.md",
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md"
+      ]
+    },
+    "oor-vlei-credential": {
+      "prefLabel": "OOR vLEI Credential",
+      "altLabels": [
+        "Legal Entity Official Organizational Role vLEI Credential",
+        "OOR Authorization vLEI Credential",
+        "OOR Credential",
+        "Official Organizational Role vLEI Credential",
+        "QVI OOR AUTH vLEI Credential",
+        "QVI OOR Authorization vLEI Credential"
+      ],
+      "definition": "A vLEI role credential binding a natural person to a specific Official Organizational Role at a Legal Entity, validated against external official sources or ISO 5009 role lists. Issued through a credential chain requiring a QVI OOR Authorization credential from a LAR and an OOR Authorization credential from the issuing QVI.",
+      "scopeNote": "Does not cover informal or engagement-specific roles, which are addressed by the ECR vLEI Credential; does not assert trustworthiness of the Legal Entity.",
+      "depth": 2,
+      "broader": [
+        "vlei-credential-types"
+      ],
+      "narrower": [],
+      "related": [
+        "oor-person"
+      ],
+      "sourceRefs": [
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-3-vlei-credential-schema-registry_v1.1-final.md",
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-official-organizational-role-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "ecr-vlei-credential": {
+      "prefLabel": "ECR vLEI Credential",
+      "altLabels": [
+        "ECR Authorization vLEI Credential",
+        "ECR Credential",
+        "Engagement Context Role vLEI Credential",
+        "LE Direct Issuance",
+        "Legal Entity Direct Issuance",
+        "Legal Entity Engagement Context Role vLEI Credential",
+        "QVI ECR AUTH vLEI Credential",
+        "QVI ECR Authorization vLEI Credential"
+      ],
+      "definition": "A vLEI role credential binding a natural person to a specific Engagement Context Role at a Legal Entity, which may be issued either by a Qualified vLEI Issuer or directly by the Legal Entity itself. Supports privacy-preserving graduated disclosure of personally identifying information and requires a QVI ECR Authorization credential for QVI-issued variants.",
+      "scopeNote": "Does not cover official organizational roles validated against public registries, which are addressed by the OOR vLEI Credential; does not assert trustworthiness of the Legal Entity.",
+      "depth": 2,
+      "broader": [
+        "vlei-credential-types"
+      ],
+      "narrower": [],
+      "related": [
+        "ecr-person"
+      ],
+      "sourceRefs": [
+        "2023-08-30_vlei-egf-v3.0-primary-document-_v1.1-final.md",
+        "2023-12-15_vlei-egf-v3.0-technical-requirements-part-3-vlei-credential-schema-registry_v1.1-final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-engagement-context-role-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "qvi-auth-vlei-credential": {
+      "prefLabel": "QVI Authorization vLEI Credential",
+      "altLabels": [
+        "QVI AUTH Credential",
+        "QVI AUTH vLEI Credential",
+        "QVI Auth vLEI Credential",
+        "QVI Authorization Credential",
+        "Qualified vLEI Issuer Authorization vLEI Credential"
+      ],
+      "definition": "A family of authorization credentials issued by Legal Entity Authorized Representatives to Qualified vLEI Issuers, comprising QVI OOR AUTH and QVI ECR AUTH variants, that provide secure instruction and authorization for the issuance and revocation of specific vLEI Role Credentials. Part of the internal credential chain, not presented to external verifiers.",
+      "scopeNote": "Does not itself serve as a publicly presentable vLEI Credential; it is part of the internal credential chain that authorizes QVI actions.",
+      "depth": 2,
+      "broader": [
+        "vlei-credential-types"
+      ],
+      "narrower": [],
+      "related": [
+        "legal-entity-representatives"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-authorization-vlei-credential-framework_v1.3_final.md",
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "vlei-reporting-api": {
+      "prefLabel": "vLEI Reporting API",
+      "altLabels": [
+        "LEI Page"
+      ],
+      "definition": "An API provided by GLEIF through which Qualified vLEI Issuers must report each issuance and revocation event of vLEI Credentials, enabling GLEIF to maintain accurate public records on LEI pages on gleif.org that display entity LEI information and associated credential details.",
+      "scopeNote": "Does not serve as the authoritative source for credential verification; it is an informational display that reflects reported credential status.",
+      "depth": 2,
+      "broader": [
+        "gleif"
+      ],
+      "narrower": [],
+      "related": [
+        "credential-lifecycle"
+      ],
+      "sourceRefs": [
+        "2024-06-26_vlei-issuer-qualification-agreement_v1.1.1_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-official-organizational-role-vlei-credential-framework_v1.4_final.md",
+        "2025-04-16_vlei-egf-v3.0-legal-entity-vlei-credential-framework_v1.4_final.md"
+      ]
+    },
+    "vlei-software": {
+      "prefLabel": "vLEI Software",
+      "altLabels": [
+        "GLEIF Supplied vLEI Software"
+      ],
+      "definition": "Open-source software sponsored by GLEIF with capabilities for vLEI Credential issuance, presentation, identifier and key management, credential revocation, and supporting functions that Qualified vLEI Issuers must install, test, and implement as part of their vLEI Ecosystem operations.",
+      "scopeNote": "",
+      "depth": 2,
+      "broader": [
+        "gleif"
+      ],
+      "narrower": [],
+      "related": [
+        "keri-infrastructure"
+      ],
+      "sourceRefs": [
+        "2023-12-15_vlei-egf-v3.0-glossary_v1.3-final.md",
+        "2023-12-15_vlei-egf-v3.0-vlei-issuer-qualification-agreement-appendix-5-qualified-vlei-issuer-service-level-agreement_v1.3-final.md"
+      ]
+    },
+    "assurance-dimensions": {
+      "prefLabel": "Assurance Dimensions",
+      "altLabels": [
+        "Conformance Assurance",
+        "Performance Assurance",
+        "Specification Assurance"
+      ],
+      "definition": "The three assurance dimensions within the Trust Assurance Framework: Specification Assurance ensuring requirements are formally documented, Conformance Assurance confirming compliance through evaluation processes such as annual qualification, and Performance Assurance enforcing requirements through technical architecture including KERI and vLEI software.",
+      "scopeNote": "",
+      "depth": 2,
+      "broader": [
+        "annual-qualification"
+      ],
+      "narrower": [],
+      "related": [],
+      "sourceRefs": [
+        "2025-04-16_vlei-egf-v3.0-trust-assurance-framework_v1.5_final.md"
+      ]
+    },
+    "qvi-self-issuance": {
+      "prefLabel": "QVI Self-Issuance",
+      "altLabels": [],
+      "definition": "The practice whereby a Qualified vLEI Issuer issues a Legal Entity vLEI Credential and OOR vLEI Credentials to itself as a Legal Entity, subject to GLEIF oversight. GLEIF may require QVIs to contract with third-party QVIs for their own credentials after a specified future deadline.",
+      "scopeNote": "Does not extend to ECR vLEI Credentials; GLEIF may require QVIs to contract with third-party QVIs for their own credentials after a specified date.",
+      "depth": 2,
+      "broader": [
+        "qualified-vlei-issuer"
+      ],
+      "narrower": [],
+      "related": [],
+      "sourceRefs": [
+        "2025-04-16_vlei-egf-v3.0-qualified-vlei-issuer-identifier-governance-framework-and-vlei-credential-framework_v1.5_final.md"
+      ]
+    }
+  },
+  "topConcepts": [
+    "keri-infrastructure",
+    "roles-and-representatives",
+    "trust-and-qualification",
+    "vlei-credentials",
+    "vlei-ecosystem-governance"
+  ]
+}
