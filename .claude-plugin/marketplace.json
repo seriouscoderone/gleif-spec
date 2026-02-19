@@ -1,0 +1,22 @@
+{
+  "name": "gleif-spec",
+  "owner": {
+    "name": "SeriousCoderOne"
+  },
+  "metadata": {
+    "description": "vLEI Ecosystem Governance Framework knowledge base — 42 SKOS concepts distilled from 24 EGF v3.0 source documents"
+  },
+  "plugins": [
+    {
+      "name": "gleif-egf-knowledge",
+      "source": "./",
+      "description": "Pre-synthesized SKOS knowledge base for the GLEIF vLEI Ecosystem Governance Framework. Contains 42 concepts covering KERI infrastructure, vLEI credentials, roles and representatives, trust assurance, and ecosystem governance. Includes a gleif-expert subagent for context-isolated queries.",
+      "version": "1.0.0",
+      "skills": [
+        "./skills/gleif-egf-knowledge"
+      ],
+      "keywords": ["gleif", "vlei", "keri", "acdc", "governance", "skos"],
+      "category": "domain-knowledge"
+    }
+  ]
+}

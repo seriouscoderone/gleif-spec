@@ -1,0 +1,12 @@
+{
+  "name": "gleif-spec",
+  "description": "vLEI Ecosystem Governance Framework knowledge base for Claude Code",
+  "version": "1.0.0",
+  "author": {
+    "name": "SeriousCoderOne"
+  },
+  "homepage": "https://github.com/seriouscoderone/gleif-spec",
+  "repository": "https://github.com/seriouscoderone/gleif-spec",
+  "license": "Apache-2.0",
+  "keywords": ["gleif", "vlei", "keri", "acdc", "egf", "governance", "skos", "domain-knowledge"]
+}
